@@ -9,7 +9,7 @@ db.execute("CREATE TABLE IF NOT EXISTS hystory "
 db.execute("CREATE VIEW IF NOT EXISTS localhistory AS "
            "SELECT strftime('%Y-%m-%d %H:%M:%f', h.time, 'localtime') as local_time,"
                       "h.account, h.amount FROM hystory h ORDER BY h.time")
-# I'm here
+#Changes here
 class Account(object):
 
     @staticmethod
